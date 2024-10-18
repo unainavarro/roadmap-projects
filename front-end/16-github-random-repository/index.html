@@ -21,22 +21,25 @@
         id="language-select"
         class="language-select"
       >
+        <option value="" disabled selected>Select a Language</option>
         <option value="javascript">JavaScript</option>
         <option value="typescript">TypeScript</option>
+        <!-- Angular: to display error fetch ->  -->
         <option value="angular">Angular</option>
         <option value="java">Java</option>
       </select>
-      <button id="fin-repo-btn" class="fin-repo-btn">Search</button>
 
-      <div id="repo-details" class="hidden">
+      <div id="repo-details" class="repo-details hidden">
         <h2 id="repo-name" class="repo-name"></h2>
         <p id="repo-description" class="repo-description"></p>
-        <p>Stars: <span id="repo-stars" class="repo-stars"></span></p>
-        <p>Forks: <span id="repo-forks" class="repo-forks"></span></p>
-        <p>Open Issues: <span id="repo-issues" class="repo-issues"></span></p>
-        <a href="" target="_blank" id="repo-link" class="repo-link"
-          >Go to repository</a
-        >
+        <div class="repo-details-flex">
+          <p>Stars: <span id="repo-stars" class="repo-stars"></span></p>
+          <p>Forks: <span id="repo-forks" class="repo-forks"></span></p>
+          <p>Open Issues: <span id="repo-issues" class="repo-issues"></span></p>
+        </div>
+        <a href="" target="_blank" id="repo-link" class="repo-link">
+          <img src="img/github-icon.svg" alt="github icon" />
+        </a>
       </div>
       <p id="error-message" class="error-message hidden"></p>
     </div>

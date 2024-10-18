@@ -1,10 +1,11 @@
-const findRepoBtn = document.querySelector("#fin-repo-btn");
-const repoDetails = document.querySelector("#repo-details");
-const errorMessage = document.querySelector("#error-message");
+const languageSelect = document.querySelector("#language-select");
 
-findRepoBtn.addEventListener("click", async () => {
+languageSelect.addEventListener("change", async () => {
   const language = document.querySelector("#language-select").value;
+  const repoDetails = document.querySelector("#repo-details");
+  const errorMessage = document.querySelector("#error-message");
   const url = `https://api.github.com/search/repositories?q=language:${language}&sort=stars`;
+
   repoDetails.classList.add("hidden");
   errorMessage.classList.add("hidden");
 
@@ -13,6 +14,7 @@ findRepoBtn.addEventListener("click", async () => {
     if (!response.ok) throw new Error("Error fetching repositories");
 
     const data = await response.json();
+    console.log(data);
     const randomRepo =
       data.items[Math.floor(Math.random() * data.items.length)];
 

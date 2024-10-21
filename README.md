@@ -22,4 +22,10 @@ This repository contains solutions to the projects proposed on the [roadmap.sh](
 
 ### Intermediate
 
+- [Custom Dropdown](https://github.com/unainavarro/roadmap.sh-projects/tree/main/front-end/14-custom-dropdown)
+- [Task Tracker](https://github.com/unainavarro/roadmap.sh-projects/tree/main/front-end/15-task-tracker)
+- [GitHub Random Repository](https://github.com/unainavarro/roadmap.sh-projects/tree/main/front-end/16-github-random-repository)
+- [Reddit Client](https://github.com/unainavarro/roadmap.sh-projects/tree/main/front-end/17-reddit-client)
+- [Temperature Convert](https://github.com/unainavarro/roadmap.sh-projects/tree/main/front-end/18-temperature-converter)
+
 ## [Backend Projects](https://roadmap.sh/backend/projects)
